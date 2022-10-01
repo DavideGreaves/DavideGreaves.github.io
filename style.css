@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --gradient: linear-gradient(90deg, rgba(182, 248, 255, 1) 0%, rgba(255, 199, 251, 1) 100%);
+}
+
+body {
+    animation: 1s ease-out 0s 1 FadeIn;
+    -moz-animation: 1s ease-out 0s 1 FadeIn;
+    -o-animation: 1s ease-out 0s 1 FadeIn;
+    -webkit-animation: 1s ease-out 0s 1 FadeIn;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #111;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    background: url(img/bkg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+.margin-content {
+    margin-top: 25vh;
+}
+
+.gradient-txt {
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    margin-bottom: -1.2rem;
+}
+
+.immagine {
+    border-radius: 7px;
+    transition: 1s ease-in-out;
+}
+
+.subtitle {
+    font-family: 'Quicksand Medium', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+.box {
+    backdrop-filter: blur(0.05rem);
+    background-color: rgba(0, 0, 0, 0.700);
+    padding: 80px;
+    border-radius: 7px;
+}
+
+@media (max-width: 400px) {
+    .box {
+        padding: 30px;
+    }
+}
