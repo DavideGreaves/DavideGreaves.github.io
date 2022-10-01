@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lorem</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.onload = function () {
+        document.body.classList.add("loaded");
+      };
+    </script>
+  </head>
+  <div class="container">
+    <h1 class="container-title">
+      Davide Greaves
+      <h2 class="container-description">Fullstack Developer</h2>
+      <img class="box" src="./images/box.png" alt="wdf" />
+    </h1>
+  </div>
+
+  <style>
+    body {
+      animation: 0.5s ease-out 0s 1 FadeIn;
+      -moz-animation: 0.5s ease-out 0s 1 FadeIn;
+      -o-animation: 0.5s ease-out 0s 1 FadeIn;
+      -webkit-animation: 0.5s ease-out 0s 1 FadeIn;
+    }
+
+    @keyframes FadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    :root {
+      font-style: normal;
+    }
+
+    body,
+    html {
+      background-image: url(images/bkg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      backdrop-filter: blur(5px);
+      background-color: rgb(15, 15, 22);
+    }
+
+    .container {
+      border-radius: 5px;
+      padding: 20%;
+      width: fit-content;
+      background-color: rgba(230, 230, 230, 0.678);
+      border: solid 2px rgba(230, 230, 230, 0.678);
+      height: 10%;
+      overflow-y: hidden;
+      margin: auto;
+    }
+
+    .container-title {
+      margin-top: -20px;
+      color: white;
+      text-align: center;
+      font-size: 66px;
+      font-family: "Noto Sans Mono", monospace;
+      text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+
+    .container-description {
+      text-align: center;
+      color: rgb(75, 75, 75);
+      font-size: 42px;
+      font-family: "Noto Sans Mono", monospace;
+      text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+
+    .box {
+      filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.555));
+      display: flex;
+      align-items: center;
+      margin: auto;
+      width: 240px;
+      border-radius: 15px;
+      border: 3px solid rgba(230, 230, 230, 0.678);
+      transition: ease 2s;
+    }
+
+    .box:hover {
+      transform: scale(1.2);
+    }
+
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #000000;
+    }
+
+    *::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: rgb(15, 15, 22);
+      border-radius: 3px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</html>
